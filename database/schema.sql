@@ -38,11 +38,39 @@ CREATE TABLE foods (
   carbs DECIMAL(18,1) NOT NULL,
   total_fiber DECIMAL(18,1) NOT NULL,
   is_estimated_macros BOOLEAN NOT NULL DEFAULT FALSE,
+  info_source TEXT NULL DEFAULT NULL,
   purchase_unit VARCHAR(255) NOT NULL,
   purchase_price DECIMAL(18,2) NOT NULL,
-  cooked_percent_weight DECIMAL(18,2) NOT NULL,
+  cooked_percent_weight DECIMAL(3,2) NOT NULL,
   cost_per_cooked_serving DECIMAL(18,2) NOT NULL,
   description TEXT NULL DEFAULT NULL,
   recipe INTEGER NULL DEFAULT NULL,
   PRIMARY KEY (id)
 )
+
+
+-- ---
+-- Table 'units'
+-- 
+-- ---
+
+
+
+
+-- ---
+-- Table 'sources'
+-- 
+-- ---
+
+
+
+
+
+
+-- ---
+-- Table 'recipes'
+-- 
+-- ---
+
+
+
