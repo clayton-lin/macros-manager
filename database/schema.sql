@@ -19,13 +19,13 @@ USE devdb001;
 
 
 -- ---
--- Table 'foods'
+-- Table 'crm_foods'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS foods;
+DROP TABLE IF EXISTS crm_foods;
 
-CREATE TABLE foods (
+CREATE TABLE crm_foods (
   id INTEGER NOT NULL AUTO_INCREMENT,
   created_at TIMESTAMP NULL DEFAULT NULL,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -43,7 +43,7 @@ CREATE TABLE foods (
   purchase_price DECIMAL(18,2) NOT NULL,
   cooked_percent_weight DECIMAL(3,2) NOT NULL,
   cost_per_cooked_serving DECIMAL(18,2) NOT NULL,
-  id_description TEXT NULL DEFAULT NULL, -- ref
+  id_description INTEGER NULL DEFAULT NULL, -- ref
   id_recipe INTEGER NULL DEFAULT NULL,  -- ref
   PRIMARY KEY (id)
 )
