@@ -7,7 +7,7 @@ const connection = mysql.createConnection({
 });
 
 connection.connect();
-connection.query('SELECT * FROM macros_food', (err, rows) => {
+connection.query('SELECT * FROM macros_foods', (err, rows) => {
   if (err) throw err;
   console.log(rows[0]);
 });
