@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "nodemon server/index.js",
-    "webpack": "webpack --mode development",
+    "webpack": "webpack --mode development --watch",
     "build": "webpack --mode production"
   },
   "devDependencies": {

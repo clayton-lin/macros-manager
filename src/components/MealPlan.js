@@ -1,15 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Meal from './Meal.js';
 
-class MealPlan extends Component {
-  render() {
-    return (
-      <div>
-        MealPlan
-        <Meal/>
-      </div>
-    );
-  }
+const MealPlan = (props) => {
+  
+  console.log(props);
+
+  return (
+    <div>
+      MealPlan
+      {props.meals.map((meal) => {
+        <Meal meal={meal}/>
+      })};
+    </div>
+  )
 }
 
 export default MealPlan;
