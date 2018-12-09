@@ -16,7 +16,8 @@
     "react-dom": "^16.6.3"
   },
   "scripts": {
-    "start": "webpack --mode development && nodemon server/index.js",
+    "start": "nodemon server/index.js",
+    "webpack": "webpack --mode development",
     "build": "webpack --mode production"
   },
   "devDependencies": {
