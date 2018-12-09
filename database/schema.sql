@@ -39,14 +39,34 @@ CREATE TABLE macros_foods (
   total_fiber DECIMAL(18,1) NOT NULL,
   is_estimated_macros BOOLEAN NOT NULL DEFAULT FALSE,
   id_source TEXT NULL DEFAULT NULL,  -- ref
+  id_description INTEGER NULL DEFAULT NULL, -- ref
+  PRIMARY KEY (id)
+)
+
+
+-- ---
+-- Table 'macros_food_entries'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS macros_food_entries;
+
+CREATE TABLE macros_food_entries (
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  created_at TIMESTAMP NULL DEFAULT NULL,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  id_user INTEGER NOT NULL, -- ref
+  id_food INTEGER NULL DEFAULT NULL, -- ref
+  id_recipe INTEGER NULL DEFAULT NULL,  -- ref
+  id_description INTEGER NULL DEFAULT NULL, -- ref
   purchase_unit VARCHAR(255) NULL,
   purchase_price DECIMAL(18,2) NULL,
   cooked_percent_weight DECIMAL(3,2) NULL,
   cost_per_cooked_serving DECIMAL(18,2) NULL,
-  id_description INTEGER NULL DEFAULT NULL, -- ref
-  id_recipe INTEGER NULL DEFAULT NULL,  -- ref
   PRIMARY KEY (id)
 )
+
+
 
 
 -- ---
