@@ -1,36 +1,45 @@
 INSERT INTO macros_foods
-  (created_at, updated_at, food, serving_unit, serving_size, calories, 
-  protein, fat, carbs, total_fiber, is_estimated_macros, id_source
-  purchase_unit, purchase_price, cooked_percent_weight, cost_per_cooked_serving, 
-  id_description, id_recipe) VALUES
-    -- (NOW(), NOW(), 'Chicken Breast', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Chicken Thighs', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Chicken Tenderloins', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Chicken Wings', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    (NOW(), NOW(), 'RXBAR', 'each', 1, 210, 12, 7, 25, 5, FALSE, NULL, 'each', 1.75, 1.00, 1.75, NULL, NULL),
-    -- (NOW(), NOW(), 'Eggs - Whole (Large AA)', 'each', 100, 100, 40, 10, 0, 0, FALSE, 'lb', 2.99, 0.75, 0.50, NULL, NULL),
-    -- (NOW(), NOW(), 'Egg Whites (Large AA)', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    (NOW(), NOW(), 'Peas (Frozen)', 'g', 80, 97, 5, 1, 13, 5, FALSE, 'lb', --2.99, 0.75, 0.50, NULL, NULL),
-    -- (NOW(), NOW(), 'Broccoli', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Paneer', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Swiss Cheese', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Costco Frozen Veggies', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Cherries (Frozen)', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Blueberries (Frozen)', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Costco Berry Blend (Frozen)', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Mangoes (Frozen)', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Pineapples (Frozen)', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Olive Oil', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Coconut Oil', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Avocado Oil', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Butter', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    -- (NOW(), NOW(), 'Ghee', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
-    (NOW(), NOW(), 'Bell Peppers', 'g', 100, 30, 1, 0.1, 7, 1, FALSE, 'each', --2.99, 0.75, 0.50, NULL, NULL),
+  (created_at, updated_at, food, serving_size, serving_unit, calories, 
+  protein, fat, carbs, total_fiber, is_estimated_macros, id_source, id_description) VALUES
+    (NOW(), NOW(), "Chicken Breast", 85, "g", 126, 25, 2.9, 0, 0, FALSE, NULL, NULL), -- "lb", 2.99, 0.73, 0.77/serv
+    (NOW(), NOW(), "RXBAR",  1, "each", 210, 12, 7, 25, 5, FALSE, NULL, NULL), -- "each", 1.75, 1.00, 1.75/serv
+    (NOW(), NOW(), "Peas (Frozen)", 80, "g", 97, 5, 1, 13, 5, FALSE, NULL, NULL), -- "lb", 1.30, 1.00, 0.23/serv
+    (NOW(), NOW(), "Nature's Garden Omega 3 Deluxe Mix", 30, "g", 160, 4, 12, 12, 2, FALSE, NULL, NULL), -- "package", $9.89, 1.00, 0.40
+    (NOW(), NOW(), "Bell Peppers", 100, "g", 30, 1, 0.1, 7, 1, FALSE, NULL, NULL),
+    (NOW(), NOW(), "Artichoke Hearts", serv, "units", cal, p, f, c, fi, FALSE, NULL, NULL),
+    -- (NOW(), NOW(), "food", serv, "unit", cal, p, f, c, fi, FALSE, NULL, NULL),
+    -- (NOW(), NOW(), "food", serv, "unit", cal, p, f, c, fi, FALSE, NULL, NULL),
+    -- (NOW(), NOW(), "food", serv, "unit", cal, p, f, c, fi, FALSE, NULL, NULL),
+    -- (NOW(), NOW(), "food", serv, "unit", cal, p, f, c, fi, FALSE, NULL, NULL),
+    -- (NOW(), NOW(), "food", serv, "unit", cal, p, f, c, fi, FALSE, NULL, NULL),
+    -- (NOW(), NOW(), "food", serv, "unit", cal, p, f, c, fi, FALSE, NULL, NULL),
+
+
+
+    -- cost/serving = (price/lb) * (serving size g) / (453.592 g/lb) / (% cooked weight)  
+
+    -- 'Chicken Thighs'
+    -- 'Chicken Tenderloins'
+    -- 'Chicken Wings'
+    -- 'Eggs - Whole (Large AA)'
+    -- 'Egg Whites (Large AA)'
+    -- 'Broccoli'
+    -- 'Paneer'
+    -- 'Swiss Cheese'
+    -- 'Costco Frozen Veggies'
+    -- 'Cherries (Frozen)'
+    -- 'Blueberries (Frozen)'
+    -- 'Costco Berry Blend (Frozen)'
+    -- 'Mangoes (Frozen)'
+    -- 'Pineapples (Frozen)'
+    -- 'Olive Oil'
+    -- 'Coconut Oil'
+    -- 'Avocado Oil'
+    -- 'Butter'
+    -- 'Ghee'
 
   
 
 
 ;
 
-
-  -- (NOW(), NOW(), 'food', 'unit', serv, cal, p, f, c, fi, FALSE, NULL, 'buy unit', buy price, % cook, cost serv, NULL, NULL),
