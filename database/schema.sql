@@ -19,13 +19,13 @@ USE devdb001;
 
 
 -- ---
--- Table 'crm_foods'
+-- Table 'macros_foods'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS crm_foods;
+DROP TABLE IF EXISTS macros_foods;
 
-CREATE TABLE crm_foods (
+CREATE TABLE macros_foods (
   id INTEGER NOT NULL AUTO_INCREMENT,
   created_at TIMESTAMP NULL DEFAULT NULL,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,

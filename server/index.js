@@ -4,7 +4,7 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 const database = require('../database/index.js');
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8001;
 
 const app = express();
 app.use(bodyParser.json());

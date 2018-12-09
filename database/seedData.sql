@@ -1,4 +1,4 @@
-INSERT INTO foods
+INSERT INTO macros_foods
   (created_at, updated_at, food, serving_unit, serving_size, calories, 
   protein, fat, carbs, total_fiber, is_estimated_macros, id_source
   purchase_unit, purchase_price, cooked_percent_weight, cost_per_cooked_serving, 
