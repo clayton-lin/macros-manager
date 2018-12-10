@@ -11,7 +11,7 @@ class App extends Component {
           mealName: "Breakfast",
           foodEntries: [
             {
-              food: 'Chicken Breast',
+              foodName: 'Chicken Breast',
               servingSize: 85,
               servingUnit: 'g',
               calories: 126,
@@ -22,7 +22,7 @@ class App extends Component {
               ratio: 1
             },
             {
-              food: 'Chicken Breast',
+              foodName: 'Chicken Breast',
               servingSize: 85,
               servingUnit: 'g',
               calories: 126,

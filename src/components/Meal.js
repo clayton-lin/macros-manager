@@ -3,16 +3,18 @@ import FoodEntry from './FoodEntry.js';
 
 const Meal = (props) => {
 
-  console.log(props);
-
   return (
     <div>
-      FoodEntry
+      {props.meal.mealName}
       {props.meal.foodEntries.map((food) => {
-        <FoodEntry food={food}/>
+        return (
+          <div>
+            <FoodEntry food={food}/>
+          </div>
+        );
       })}
     </div>
-  )
+  );
   
 }
 
