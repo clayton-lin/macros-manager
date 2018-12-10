@@ -20,8 +20,27 @@ class App extends Component {
               carbs: 0,
               totalFiber: 0,
               ratio: 1
+            },
+            {
+              food: 'Chicken Breast',
+              servingSize: 85,
+              servingUnit: 'g',
+              calories: 126,
+              protein: 25,
+              fat: 2.9,
+              carbs: 0,
+              totalFiber: 0,
+              ratio: 1
             }
           ]
+        },
+        {
+          mealName: "Lunch",
+          foodEntries: []
+        },
+        {
+          mealName: "Dinner",
+          foodEntries: []
         }
       ]
     };

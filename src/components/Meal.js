@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import FoodEntry from './FoodEntry.js';
 
-class Meal extends Component {
-  render() {
-    return (
-      <div>
-        Meal
-        <FoodEntry/>
-      </div>
-    );
-  }
+const Meal = (props) => {
+
+  console.log(props);
+
+  return (
+    <div>
+      FoodEntry
+      {props.meal.foodEntries.map((food) => {
+        <FoodEntry food={food}/>
+      })}
+    </div>
+  )
+  
 }
 
 export default Meal;
